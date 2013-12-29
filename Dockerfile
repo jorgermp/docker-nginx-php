@@ -9,6 +9,8 @@ RUN apt-get upgrade -y
  
 RUN apt-get -y install nginx php5-fpm php5-cli php5-mysql
 
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
 ADD ./startup.sh /opt/startup.sh
 ADD ./default /etc/nginx/sites-enabled/default
  
