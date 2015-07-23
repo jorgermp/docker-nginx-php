@@ -5,8 +5,7 @@ Now only works nginx with html pages.
 Build:
 
 cd docker-nginx-php
-
-docker build -t username/name .
+docker build -t ubuntu:14.04 .
 
 Run:
 
