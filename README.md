@@ -6,8 +6,8 @@ Build:
 
 cd docker-nginx-php
 
-docker build -t ubuntu:14.04 .
+docker build -t jorgermp/nginx-php .
 
 Run:
 
-docker run -d -p localport:80 -v /path/html:/usr/share/nginx/www username/name /bin/bash /opt/startup.sh
+docker run -d -p 8080:80 -v /path/html:/usr/share/nginx/www image_id /bin/bash /opt/startup.sh
